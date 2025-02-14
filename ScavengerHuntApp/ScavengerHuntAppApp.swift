@@ -11,7 +11,7 @@ import SwiftUI
 struct ScavengerHuntAppApp: App {
     var body: some Scene {
         WindowGroup {
-            CardsListView() // Start app with CardsListView instead of ContentView
+            ContentView()  // ✅ This should be the main entry point.
         }
     }
 }

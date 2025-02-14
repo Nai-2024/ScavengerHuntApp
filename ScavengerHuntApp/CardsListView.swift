@@ -14,37 +14,37 @@ struct Card: Identifiable {
     var folderName: String  // Folder name for the images
 }
 
+import SwiftUI
+
 struct CardsListView: View {
-  
-    // Create a list of cards with folder names
     let cards: [Card] = [
-        Card(backgroundColor: .red, title: "Animal", folderName: "Animal"),        // "Animal" folder
-        Card(backgroundColor: .blue, title: "Birds", folderName: "Birds"),          // "Birds" folder
-        Card(backgroundColor: .green, title: "Snakes", folderName: "Snakes"),       // "Snakes" folder
-        Card(backgroundColor: .yellow, title: "Nature", folderName: "Nature"),     // "Nature" folder
-        Card(backgroundColor: .purple, title: "Dolphine", folderName: "Dolphine"),    // "Dolphin" folder
-        Card(backgroundColor: .orange, title: "Shark", folderName: "Shark"),        // "Shark" folder
-        Card(backgroundColor: .blue, title: "Horses", folderName: "Horses"),        // "Horses" folder
-        Card(backgroundColor: .green, title: "Fish", folderName: "Fish"),          // "Fish" folder
+        Card(backgroundColor: .red, title: "Animal", folderName: "Animal"),
+        Card(backgroundColor: .blue, title: "Birds", folderName: "Birds"),
+        Card(backgroundColor: .green, title: "Snakes", folderName: "Snakes"),
+        Card(backgroundColor: .yellow, title: "Nature", folderName: "Nature"),
+        Card(backgroundColor: .purple, title: "Dolphine", folderName: "Dolphine"),
+        Card(backgroundColor: .orange, title: "Shark", folderName: "Shark"),
+        Card(backgroundColor: .blue, title: "Horses", folderName: "Horses"),
+        Card(backgroundColor: .green, title: "Fish", folderName: "Fish"),
         Card(backgroundColor: .yellow, title: "Cats", folderName: "Cats"),
-        Card(backgroundColor: .red, title: "Crocodiles", folderName: "Crocodiles"), // "Crocodiles" folder
+        Card(backgroundColor: .red, title: "Crocodiles", folderName: "Crocodiles")
     ]
-  
-    @State private var selectedCard: Card?  // Track which card is selected
+
+    @State private var selectedCard: Card?
 
     var body: some View {
-        ScrollView(showsIndicators: false) {
+        ScrollView {
             VStack(spacing: 20) {
                 ForEach(cards) { card in
-                    CardThumbnail(card: card)
+                    CardThambNail(card: card)
                         .onTapGesture {
                             selectedCard = card
                         }
                 }
             }
+            .padding()
         }
         .fullScreenCover(item: $selectedCard) { card in
-            // Show selected card in full screen with all images from the folder
             SingleCardView(card: card)
         }
     }

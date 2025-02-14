@@ -10,9 +10,22 @@
 		08782E1C2D5541500070CFBE /* ScavengerHuntApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScavengerHuntApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		08DD27C22D5E3B9700605DBF /* Exceptions for "ScavengerHuntApp" folder in "ScavengerHuntApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 08782E1B2D5541500070CFBE /* ScavengerHuntApp */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		08782E1E2D5541500070CFBE /* ScavengerHuntApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				08DD27C22D5E3B9700605DBF /* Exceptions for "ScavengerHuntApp" folder in "ScavengerHuntApp" target */,
+			);
 			path = ScavengerHuntApp;
 			sourceTree = "<group>";
 		};
@@ -254,6 +267,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ScavengerHuntApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScavengerHuntApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to save photos to your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +299,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ScavengerHuntApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScavengerHuntApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to save photos to your library.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
